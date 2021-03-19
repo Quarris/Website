@@ -1,0 +1,32 @@
+﻿@page
+@model ProjectsModel
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<div>
+  @foreach (var category in Model.Categories) {
+    <h2 class="page-header">@category.Name</h2>
+    @foreach (var project in category.Projects) {
+      <div class="jumbotron project">
+        <div class="container">
+          <div class="row">
+            <div class="col-auto">
+              <img class="project-img" src=@project.Icon>
+            </div>
+            <div class="col">
+              <h2><b>@project.Name</b></h2>
+            </div>
+          </div>
+        </div>
+        <p class="lead">@Html.Raw(project.Description)</p>
+        <hr>
+        <p>@Html.Raw(project.Details)</p>
+        @foreach (var link in project.Links) {
+          <a class="btn btn-primary btn-lg" href=@link.Ref role="button">@link.Name</a>
+        }
+      </div>
+    }
+  }
+</div>
+

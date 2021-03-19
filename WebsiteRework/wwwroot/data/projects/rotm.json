@@ -1,0 +1,16 @@
+{
+    "name": "Rebirth of the Mobs",
+    "icon": "img/projects/rotm.png",
+    "description": "Rebirth of the Mobs allows you to write configs to customise additional behaviour in mobs.",
+    "details": "The behaviours range from adding immunities to mobs to spawning monsters when an entity is below certain health and allowing mobs to regen health whenever they slain their enemies",
+    "links": [
+        {
+            "name": "CurseForge",
+            "link": "https://www.curseforge.com/minecraft/mc-mods/rebirth-of-the-mobs"
+        },
+        {
+            "name": "Github",
+            "link": "https://github.com/Quarris/RebirthOfTheMobs"
+        }
+    ]
+}

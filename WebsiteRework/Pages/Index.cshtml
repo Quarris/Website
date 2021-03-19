@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+  ViewData["Title"] = "Home page";
+}
+
+<div>
+  <h1 class="page-header text-center">@Model.Greeting</h1>
+  <p>Welcome to my little website!</p>
+  <p>My name is Tom and I am a Computer Science Graduate interested in programming and game development.</p>
+  <br>
+  <h3>Projects</h3>
+  <p>Check out my <a asp-area="" asp-page="/Projects">projects</a> to see what I do and if you have any ideas feel free to let me know.</p>
+  <h3>Commissions</h3>
+  <p>If you have an idea for a Minecraft mod that you would like to see realised, check out my <a asp-area="" asp-page="/Commissions">commissions</a> page and I might be able to make it for you!</p>
+  <h3>About Me</h3>
+  <p>If you want to find out more info about me, what I do and how to contact me, then check out the <a asp-area="" asp-page="/About">about</a> section</p>
+</div>

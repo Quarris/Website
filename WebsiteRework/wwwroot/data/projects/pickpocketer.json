@@ -1,0 +1,16 @@
+{
+    "name": "Pick Pocketer",
+    "icon": "img/projects/pickpocketer.png",
+    "description": "Pick Pocketer allows players to steal from their enemies!",
+    "details": "You can steal from mobs, for loot is either generated from the mobs loot table or customised in configs, and players, which is limited to single item per steal attempt and the victim has a chance of being notified of it!",
+    "links": [
+        {
+            "name": "CurseForge",
+            "link": "https://www.curseforge.com/minecraft/mc-mods/pick-pocketer"
+        },
+        {
+            "name": "Github",
+            "link": "https://github.com/Quarris/PickPocketer"
+        }
+    ]
+}

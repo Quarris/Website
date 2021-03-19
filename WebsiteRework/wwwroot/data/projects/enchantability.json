@@ -1,0 +1,16 @@
+{
+    "name": "Enchantability",
+    "icon": "img/projects/enchantability.png",
+    "description": "Enchantability is a mod which allows you to enchant yourself with unique abilities by placing enchanted books into your <b>Ender Chest<b>",
+    "details": "Each enchanted book has been given an ability which is tailored to how the enchant behaves but specifically made unique as to not make the original enchantment obsolete",
+    "links": [
+        {
+            "name": "CurseForge",
+            "link": "https://www.curseforge.com/minecraft/mc-mods/enchantability"
+        },
+        {
+            "name": "Github",
+            "link": "https://github.com/Quarris/Enchantability"
+        }
+    ]
+}
