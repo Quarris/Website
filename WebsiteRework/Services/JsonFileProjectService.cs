@@ -44,5 +44,9 @@ namespace WebsiteRework.Services {
                     });
             }
         }
+
+        public IEnumerable<Project> GetAllProjects() {
+            return this.GetCategories().SelectMany(category => category.Projects);
+        }
     }
 }
