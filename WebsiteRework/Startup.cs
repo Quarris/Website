@@ -16,6 +16,7 @@ namespace WebsiteRework {
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) {
             services.AddRazorPages();
+            services.AddControllers();
             services.AddTransient<JsonFileGreetingService>();
             services.AddTransient<JsonFileProjectService>();
         }
@@ -37,7 +38,15 @@ namespace WebsiteRework {
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => { endpoints.MapRazorPages(); });
+            app.UseEndpoints(endpoints => {
+                endpoints.MapRazorPages();
+                endpoints.MapControllers();
+                /*endpoints.MapGet("/api/projects", context => {
+                    var projects = app.ApplicationServices.GetService<JsonFileProjectService>().GetAllProjects();
+                    var json = JsonSerializer.Serialize(projects);
+                    return context.Response.WriteAsync(json);
+                });*/
+            });
         }
     }
 }
